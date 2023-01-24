@@ -37,7 +37,8 @@ body {
 .heading-1 {
   font-size: 4.5rem;
   color: #f9f7f6;
-  line-height: 1; }
+  line-height: 1;
+  overflow: hidden; }
 
 .heading-2 {
   font-size: 4rem;
@@ -130,6 +131,7 @@ body {
     top: 1.2rem; }
 
 .header {
+  overflow: hidden;
   grid-column: full-start/ col-end 6;
   background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpeg);
   background-position: center;
@@ -147,6 +149,8 @@ body {
   @media only screen and (max-width: 37.5em) {
     .header {
       padding: 5rem; } }
+  .header .heading-1 > span {
+    display: block; }
   .header__logo {
     height: 3rem;
     justify-self: center; }
