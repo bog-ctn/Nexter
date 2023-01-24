@@ -7,6 +7,7 @@ btnHeader.addEventListener("click", function () {
     .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 });
 
+// ------- Animations
 const tl = gsap.timeline({
   defaults: { duration: 0.75, ease: "power2.Out" },
 });
@@ -23,7 +24,3 @@ tl.fromTo(
   { y: 0, opacity: 1 },
   "<50%"
 );
-
-// ------- Animations
-
-//--->Header
