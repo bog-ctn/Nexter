@@ -1,0 +1,31 @@
+{
+  "name": "nexter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass ./sass/main.scss ./up/css/style.css -w",
+    "devserver": "live-server ./up",
+    "start": "npm-run-all --parallel watch:sass devserver ",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss  css/style.comp.css --use autoprefixer -b -o css/style.prefix.css ",
+    "compress:css": "node-sass css/style.prefix.css .up/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 10 versions",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "concat": "^1.0.3",
+    "install": "^0.13.0",
+    "node-sass": "^8.0.0",
+    "npm": "^9.3.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.5.2"
+  }
+}
