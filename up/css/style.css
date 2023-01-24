@@ -38,7 +38,8 @@ body {
   font-size: 4.5rem;
   color: #f9f7f6;
   line-height: 1;
-  overflow: hidden; }
+  overflow: hidden;
+  color: red; }
 
 .heading-2 {
   font-size: 4rem;
