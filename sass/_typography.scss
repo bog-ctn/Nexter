@@ -30,6 +30,7 @@
   font-size: 1.6rem;
   color: $color-primary;
   text-transform: uppercase;
+  overflow: hidden;
 }
 .heading-4 {
   @extend %heading;
